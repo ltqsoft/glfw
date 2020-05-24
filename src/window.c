@@ -378,6 +378,12 @@ GLFWAPI void glfwWindowHint(int hint, int value)
         case GLFW_FOCUS_ON_SHOW:
             _glfw.hints.window.focusOnShow = value ? GLFW_TRUE : GLFW_FALSE;
             return;
+        case GLFW_XPOS:
+            _glfw.hints.window.xpos = value;
+            return;
+        case GLFW_YPOS:
+            _glfw.hints.window.ypos = value;
+            return;
         case GLFW_CLIENT_API:
             _glfw.hints.context.client = value;
             return;

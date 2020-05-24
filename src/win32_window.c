@@ -1208,8 +1208,8 @@ static int createNativeWindow(_GLFWwindow* window,
     }
     else
     {
-        xpos = CW_USEDEFAULT;
-        ypos = CW_USEDEFAULT;
+        xpos = wndconfig->xpos > 0 ? wndconfig->xpos : CW_USEDEFAULT;
+        ypos = wndconfig->ypos > 0 ? wndconfig->ypos : CW_USEDEFAULT;
 
         window->win32.maximized = wndconfig->maximized;
         if (wndconfig->maximized)

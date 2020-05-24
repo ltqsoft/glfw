@@ -842,6 +842,18 @@ extern "C" {
  *  [window attribute](@ref GLFW_FOCUS_ON_SHOW_attrib).
  */
 #define GLFW_FOCUS_ON_SHOW          0x0002000C
+/*! @brief Window x-position attribute
+ *
+ *  Window x-position [window hint](@ref GLFW_XPOS_hint) and
+ *  [window attribute](@ref GLFW_XPOS_attrib).
+ */
+#define GLFW_XPOS        0x0002000D
+/*! @brief Window y-position attribute
+*
+*  Window y-position [window hint](@ref GLFW_YPOS_hint) and
+*  [window attribute](@ref GLFW_YPOS_attrib).
+*/
+#define GLFW_YPOS        0x0002000E
 
 /*! @brief Framebuffer bit depth hint.
  *
